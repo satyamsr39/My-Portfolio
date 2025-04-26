@@ -1,12 +1,14 @@
 import React from "react";
 import Skill from "./Skill";
+import Image from "next/image";
+
 
 const Contents = () => {
   return (<>
     <div className="about px-6 py-8">
       <div className="text-center font-bold text-2xl text-gray-800">ABOUT ME</div>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-4">
-        <img
+        <Image
           className="h-70 w-64 rounded-full md:rounded-none shadow-lg"
           src="/profile.jpg"
           alt="Profile"
