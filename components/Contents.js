@@ -14,7 +14,7 @@ const Contents = () => {
           alt="Profile"
         />
         <div className="my-4  leading-relaxed max-w-2xl">
-          👋 Hi, I'm <b>Satyam Singh</b>, a passionate <b>Web Developer</b> with
+          👋 Hi, I&apos;m <b>Satyam Singh</b>, a passionate <b>Web Developer</b> with
           expertise in building dynamic, responsive, and scalable web
           applications. I specialize in <b>MERN Stack, Next.js, and JavaScript</b>,
           crafting seamless user experiences with cutting-edge technologies.
