@@ -18,7 +18,7 @@ const Footer = () => {
           <FaGithub /> GitHub
         </a>
         <a
-          href="https://linkedin.com/in/satyam-singh-44a432293"
+          href="https://linkedin.com/in/satyamsr139"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:underline"
@@ -26,7 +26,7 @@ const Footer = () => {
           <FaLinkedin /> LinkedIn
         </a>
         <a
-          href="https://www.instagram.com/satyamsinghrajput139/"
+          href="https://www.instagram.com/satyamsr139/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:underline"
