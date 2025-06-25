@@ -7,7 +7,8 @@ const nodemailer=require("nodemailer")
 
 const app=express()
 dotenv.config()
-const port=3000
+// const port=3000
+const PORT=process.env.PORT || 3000
 
 app.use(bodyParser.json())
 app.use(cors())
@@ -57,7 +58,7 @@ app.get('/',(req,res)=>{
 res.send("response Sent")
 })
 
-app.listen(port,()=>{
+app.listen(PORT,()=>{
     console.log(`examples are listenning at port http://localhost:${port}`)
 })
 }
