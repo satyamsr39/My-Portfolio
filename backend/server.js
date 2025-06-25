@@ -59,7 +59,7 @@ res.send("response Sent")
 })
 
 app.listen(PORT,()=>{
-    console.log(`examples are listenning at port http://localhost:${port}`)
+    console.log(`examples are listenning at port http://localhost:${PORT}`)
 })
 }
 start()
