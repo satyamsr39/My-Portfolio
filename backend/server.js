@@ -54,11 +54,11 @@ const mailOptions = {
 })
 
 app.get('/',(req,res)=>{
-res.send("hello world")
+res.send("response Sent")
 })
 
 app.listen(port,()=>{
-    console.log(`examples are listenning at port http://localhost:${port}/`)
+    console.log(`examples are listenning at port http://localhost:${port}`)
 })
 }
 start()

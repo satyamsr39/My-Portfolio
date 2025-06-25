@@ -12,6 +12,8 @@ const Contents = () => {
           className="h-70 w-64 rounded-full md:rounded-none shadow-lg"
           src="/profile.jpg"
           alt="Profile"
+          height="70"
+          width='64'
         />
         <div className="my-4  leading-relaxed max-w-2xl">
           👋 Hi, I&apos;m <b>Satyam Singh</b>, a passionate <b>Web Developer</b> with
