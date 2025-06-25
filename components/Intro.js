@@ -14,7 +14,7 @@ const Intro = () => {
         className="text-center max-w-3xl"
       >
         <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-4">
-          Hi, I'm <span className="text-cyan-400">Satyam</span>
+          Hi, I&apos;m <span className="text-cyan-400">Satyam</span>
         </h1>
 
        <p className="text-lg md:text-xl text-gray-300 mb-6">
