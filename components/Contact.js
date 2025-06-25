@@ -11,7 +11,7 @@ const handlechange=(e)=>{
 }
 
 const Save=async()=>{
-await fetch("http://localhost:3000/",{method:"POST",headers:{"Content-Type":"application/json"}, body:JSON.stringify({name:form.name,email:form.email,message:form.message})
+await fetch("https://my-portfolio-31pa.onrender.com/",{method:"POST",headers:{"Content-Type":"application/json"}, body:JSON.stringify({name:form.name,email:form.email,message:form.message})
 })
 }
 
