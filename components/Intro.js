@@ -1,20 +1,37 @@
-import React from 'react'
-import Link from 'next/link'
+"use client";
+import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
-    <div className='text-center pt-16 h-160 text-5xl font-bold flex justify-center items-center'>
-<div className=''>
-  HI<span className='text-blue-700'>, </span>I<div className='py-4'>
-AM SATYAM<div className='py-2'>SINGH</div> 
- </div>
-<Link href='/resume.pdf'><button type="button" className="text-white cursor-pointer bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-gray-300 font-medium rounded-full text-lg px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Download Resume
-  </button>
-  </Link>
-</div>
+    <section
+      id="intro"
+      className="h-screen flex items-center justify-center bg-cyan-950 text-white px-6"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.1, ease: "easeOut" }}
+        className="text-center max-w-3xl"
+      >
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-4">
+          Hi, I'm <span className="text-cyan-400">Satyam</span>
+        </h1>
 
-    </div>
-  )
-}
+       <p className="text-lg md:text-xl text-gray-300 mb-6">
+  I blend full-stack development, algorithmic thinking, and AI to craft smart, scalable web experiences.
+</p>
 
-export default Intro
+
+        <a
+          href="/resume.pdf"
+          download
+          className="inline-block bg-cyan-400 text-cyan-950 font-semibold px-6 py-3 rounded-md shadow-md hover:bg-cyan-300 transition duration-300"
+        >
+          Download Resume
+        </a>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Intro;

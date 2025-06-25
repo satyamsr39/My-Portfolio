@@ -1,43 +1,23 @@
+"use client";
 import React from "react";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-950 py-4 mt-10">
-      <div className="text-center text-gray-100 font-semibold text-lg mb-2">
-        📬 Connect with me
-      </div>
-      <div className="flex justify-center gap-6 flex-wrap text-gray-300 text-md">
-        <a
-          href="https://github.com/satyamsr39"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:underline"
-        >
-          <FaGithub /> GitHub
-        </a>
-        <a
-          href="https://linkedin.com/in/satyamsr139"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:underline"
-        >
-          <FaLinkedin /> LinkedIn
-        </a>
-        <a
-          href="https://www.instagram.com/satyamsr139/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 hover:underline"
-        >
-          <FaInstagram /> Instagram
-        </a>
-        <a href="mailto:sars8174@gmail.com" className="flex items-center gap-2 hover:underline">
-          <MdEmail /> sars8174@gmail.com
-        </a>
-      </div>
-    </footer>
+    <motion.footer
+      className="bg-cyan-950 py-6  border-t border-cyan-700/50 text-center"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+    >
+      <p className="text-gray-400 text-sm mb-1">
+        © {new Date().getFullYear()} Satyam Singh. All rights reserved.
+      </p>
+      <p className="text-gray-600 text-xs italic">
+        Built with React, Tailwind CSS & Framer Motion
+      </p>
+    </motion.footer>
   );
 };
 
