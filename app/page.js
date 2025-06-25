@@ -5,11 +5,13 @@ import Skill from "@/components/Skill";
 import Education from "@/components/Education";
 import ContactSection from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
     <div className="text-xl">
       <Navbar />
+      <Chatbot/>
 
         <Intro />
       <div id="profile">
