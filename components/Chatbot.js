@@ -42,7 +42,7 @@ const Chatbot = () => {
 
       {/* Chat Window */}
       {open && (
-        <div className="fixed bottom-20 right-6 bg-gray-900 border border-gray-700 text-white w-80 h-96 rounded-xl shadow-xl flex flex-col z-50">
+        <div className="fixed bottom-20 right-6 bg-gray-900 border border-gray-700 text-white w-84 h-96 rounded-xl shadow-xl flex flex-col z-50">
           <div className="p-3 border-b border-gray-700 font-semibold flex justify-between items-center">
             Gemini Chat
             <button onClick={() => setOpen(false)} className="text-gray-400 hover:text-red-500">×</button>
@@ -69,7 +69,7 @@ const Chatbot = () => {
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
               placeholder="Ask something..."
             />
-            <button onClick={sendMessage} className="bg-cyan-600 px-3 rounded hover:bg-cyan-700">
+            <button onClick={sendMessage} className="bg-cyan-600 px-2 rounded hover:bg-cyan-700">
               Send
             </button>
           </div>
