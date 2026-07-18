@@ -12,7 +12,7 @@ const Footer = () => {
       transition={{ duration: 0.7 }}
     >
       <p className="text-gray-400 text-sm mb-1">
-        © {new Date().getFullYear()} Satyam Singh. All rights reserved.
+        © {new Date().getFullYear()} Satyam Singh
       </p>
       <p className="text-gray-600 text-xs italic">
         Built with React, Tailwind CSS & Framer Motion
